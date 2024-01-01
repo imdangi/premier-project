@@ -194,7 +194,7 @@ body {
     justify-content: center;
     align-items: center;
     animation-name: model-scroll-animation;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     transition: all ease 0.3s;
     animation-iteration-count: infinite;
@@ -206,7 +206,7 @@ body {
         transform: translateX(0);
     }
 
-    from {
+    to {
         transform: translateX(-125vw);
     }
 }
@@ -215,11 +215,6 @@ body {
     font-size: 1vw;
     font-weight: 400;
     letter-spacing: -1px;
-}
-
-.models:hover h4 {
-    color: grey;
-    transition: all ease-in 0.2s;
 }
 
 .models img {
@@ -231,9 +226,11 @@ body {
     object-position: center;
 }
 
-.models:hover img {
-    border: 3px solid transparent;
-    transition: all ease-in 0.2s;
+.models:hover {
+    /* border: 3px solid none; */
+    transform: translate(0%, 0%) scale(1.2);
+    color: grey;
+    transition: all ease-in 0.3s;
     cursor: pointer;
 }
 
